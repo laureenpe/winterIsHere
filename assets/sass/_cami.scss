@@ -31,8 +31,17 @@
     	right: 15px;
 	}
 	.btn{
-		width: 170px;
-		margin: 5px;
-		position: relative;
+		width: 135px;
+    	margin: 5px;
+    	position: relative;
+    	font-size: 10px;
+    	right: 7px;
 	}
+	.btn-lg{
+		height: 70px;
+	}
+}
+
+.arrow{
+	position: relative;
 }
