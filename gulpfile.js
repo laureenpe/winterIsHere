@@ -19,7 +19,7 @@ gulp.task('style', function(){
 });
 
 gulp.task('webserver', function(){
-	gulp.src('../winterIsHerels/')
+	gulp.src('../winterIsHere/')
 	.pipe(webserver({
 		fallback: 'index.html',
 		livereload: true,

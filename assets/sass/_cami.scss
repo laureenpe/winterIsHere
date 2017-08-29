@@ -1,0 +1,38 @@
+.no-space{
+	margin-bottom: 0px;
+}
+
+.col{
+	.devicon-javascript-plain{
+		font-size: 170px;
+    	color: $blue;
+    	position: relative;
+    	right: 10px;
+    	top: 50px;
+	}
+	p{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	h5{
+		color: $yellow;
+		font-family: $openSans;
+		font-weight: bold;
+	}
+	img{
+		color: $yellow;
+		width: 70px;
+		height: 40px;
+	}
+	.icon-list{
+		width: 20px;
+    	position: relative;
+    	top: 15px;
+    	right: 15px;
+	}
+	.btn{
+		width: 170px;
+		margin: 5px;
+		position: relative;
+	}
+}
