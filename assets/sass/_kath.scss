@@ -1,4 +1,10 @@
 .nav{
+
+	img {
+    
+    margin-left: 40%;
+}
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -15,4 +21,41 @@
 			}
 		}
 	}
+	img.responsive-img{
+  	margin-left:40%;
+}
+
+}
+
+.logrado{
+
+  font-family: "pompiere",cursive;
+  .container-fluid{
+    background-image: url("../img/stat-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 80px;
+    padding: 80px 0;
+    text-align: center;
+  }
+  h3{
+    color:white;
+
+  }
+  h2{
+    position: relative;
+    bottom: 117px;
+    color: white;
+
+  }
+  .titulos{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    text-transform: capitalize;
+  }
+
+
 }
