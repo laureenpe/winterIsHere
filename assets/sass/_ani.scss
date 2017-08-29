@@ -1,0 +1,79 @@
+#body-index{
+	background-color:#32dbc9;
+}
+.row .col{
+	padding:0;
+}
+/* SLIDER */
+#ani_conten_slider{
+	background-color:white;
+}
+.slider li{
+	background-color:white;
+	border-style:none;
+	border:none;
+	width:300px;
+	height:300px;
+}
+.slider li img{
+	width:300px;
+	height:300px;
+}
+.slider .indicators{
+	background-color:#32dbc9;
+}
+.slider{
+	background-color:#32dbc9;
+}
+/*BOTONES INDEX*/
+.ani_boton_index{
+	background-color:$orange;
+	color: white;
+	padding: 10px;
+	width:80%;
+	font-size:20px;
+	border-style:none;
+	border-radius:5px;
+	margin-left:10%;
+	margin-top:45px;
+} 
+.ani_boton_index_dos{
+	margin-top:10px;
+}
+.ani_boton_a{
+	margin-left:10%;
+	color:white;
+	padding-top:10px;
+	font-size:15px;
+}
+
+/* ------ SIGN UP ------ */
+#body-screen2{
+	background-color:white;
+}
+.ani_registro_h2{
+	text-align:center;
+	margin-top:50px;
+}
+.ani_input{
+	margin-left:10%;
+	width:80%;
+	border:1px solid #32dbc9;//no esta funcionando esto!
+}
+.ani_registro_label{
+	color: black;
+	font-size:15px;
+}
+.ani_registro_boton{
+	margin-left:10%;
+	width:80%;
+	background-color:white;
+	padding:10px;
+	border-style:none;
+	border:1px solid #32dbc9;
+	border-radius:5px;
+	font-size:20px;
+}
+.ani_registro_div{
+	margin-top:50px;
+}
