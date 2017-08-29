@@ -19,9 +19,9 @@ gulp.task('style', function(){
 });
 
 gulp.task('webserver', function(){
-	gulp.src('../winterIsHerels/')
+	gulp.src('../winterIsHere/')
 	.pipe(webserver({
-		fallback: 'index.html',
+		fallback: 'screen8.html',
 		livereload: true,
 		directoryListing: false,
 		open: true

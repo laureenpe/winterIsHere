@@ -20278,3 +20278,7 @@ if (Vel) {
 $(document).ready(function () {
 	
 });
+$(document).ready(function(){
+	$(".button-collapse").sideNav();
+});
+
