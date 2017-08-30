@@ -9606,6 +9606,204 @@ body {
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 
+#animation {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.showRoll #frame {
+  border-color: #b3b3b3;
+}
+
+#frame {
+  width: 50px;
+  height: 72px;
+  border: 1px solid transparent;
+  background: url("https:/s.cdpn.io/79/sprite-steps.png") no-repeat left top;
+  animation: frame-animation 1s steps(10) infinite;
+}
+
+@keyframes frame-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+.showRoll #roll {
+  opacity: .2;
+}
+
+#roll {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 500px;
+  border: 1px solid #b3b3b3;
+  background: #fff url("https:/s.cdpn.io/79/sprite-steps.png") no-repeat left top;
+  transition: opacity .3s linear;
+  animation: roll-animation 1s steps(10) infinite;
+}
+
+@keyframes roll-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #39f;
+}
+
+a:hover {
+  color: #66b3ff;
+}
+
+a:active {
+  color: #0080ff;
+}
+
+p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #999;
+}
+
+.hl {
+  color: #333;
+}
+
+ul {
+  margin: 40px 0;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.WebKit ul {
+  text-align: left;
+}
+
+.WebKit #show {
+  -webkit-appearance: none;
+  outline: 0;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: -2px 6px 0 0;
+  vertical-align: middle;
+  border: 10px solid #ccc;
+  background: #666;
+  box-shadow: 0 1px 0 rgba(255,255,255,.6);
+  -webkit-transition: border-width .2s cubic-bezier(.26,.08,.15,1);
+}
+
+.WebKit #show:active,
+.WebKit #show:checked:active {
+  border: 0 solid #ccc;
+  -webkit-transition-duration: .1;
+}
+
+.WebKit #show:checked {
+  border: 5px solid #ccc;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4),0 1px 0 rgba(255,255,255,.6);
+}
+
+#duration {
+  display: inline-block;
+  position: relative;
+  margin: -4px 6px 0 0;
+}
+
+#duration-label {
+  display: none;
+}
+
+.WebKit #duration-label {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 6px;
+  font-size: 11px;
+  color: #999;
+  text-shadow: 0 1px 0 rgba(255,255,255,.3);
+  pointer-events: none;
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.26,.08,.15,1),color .6s .2s ease-out;
+}
+
+.WebKit #duration-label.isRight {
+  right: 50%;
+  margin-right: -20px;
+  left: auto;
+  -webkit-transform: translate3d(20px,0,0);
+}
+
+.WebKit #duration-label.isLeft {
+  right: auto;
+  margin-left: -20px;
+  left: 50%;
+  -webkit-transform: translate3d(-20px,0,0);
+}
+
+.WebKit #duration:active #duration-label {
+  color: #4d4d4d;
+  -webkit-transition-delay: 0;
+}
+
+.WebKit #duration-input {
+  -webkit-appearance: none;
+  position: relative;
+  vertical-align: middle;
+  width: 100px;
+  border-radius: 20px;
+  background: #ccc;
+  box-shadow: 0 1px 0 rgba(255,255,255,.6);
+  overflow: hidden;
+  outline: 0;
+}
+
+.WebKit #duration-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #ccc;
+  background: #666;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+  -webkit-transition: border-width .2s cubic-bezier(.26,.08,.15,1);
+}
+
+.WebKit #duration-input:active::-webkit-slider-thumb {
+  border: 0 solid #ccc;
+  -webkit-transition-duration: .1;
+}
+
+.fixed-action-btn {
+  position: fixed;
+  right: 23px;
+  bottom: 45px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}
+
+.fixed-action-btn.toolbar {
+  padding: 0;
+  height: 74px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9869,6 +10067,204 @@ body {
   -webkit-transform-origin: 200px 200px;
   -webkit-transform: translate3d(0,0,0);
   -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#animation {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.showRoll #frame {
+  border-color: #b3b3b3;
+}
+
+#frame {
+  width: 50px;
+  height: 72px;
+  border: 1px solid transparent;
+  background: url("https:/s.cdpn.io/79/sprite-steps.png") no-repeat left top;
+  animation: frame-animation 1s steps(10) infinite;
+}
+
+@keyframes frame-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+.showRoll #roll {
+  opacity: .2;
+}
+
+#roll {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 500px;
+  border: 1px solid #b3b3b3;
+  background: #fff url("https:/s.cdpn.io/79/sprite-steps.png") no-repeat left top;
+  transition: opacity .3s linear;
+  animation: roll-animation 1s steps(10) infinite;
+}
+
+@keyframes roll-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #39f;
+}
+
+a:hover {
+  color: #66b3ff;
+}
+
+a:active {
+  color: #0080ff;
+}
+
+p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #999;
+}
+
+.hl {
+  color: #333;
+}
+
+ul {
+  margin: 40px 0;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.WebKit ul {
+  text-align: left;
+}
+
+.WebKit #show {
+  -webkit-appearance: none;
+  outline: 0;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: -2px 6px 0 0;
+  vertical-align: middle;
+  border: 10px solid #ccc;
+  background: #666;
+  box-shadow: 0 1px 0 rgba(255,255,255,.6);
+  -webkit-transition: border-width .2s cubic-bezier(.26,.08,.15,1);
+}
+
+.WebKit #show:active,
+.WebKit #show:checked:active {
+  border: 0 solid #ccc;
+  -webkit-transition-duration: .1;
+}
+
+.WebKit #show:checked {
+  border: 5px solid #ccc;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4),0 1px 0 rgba(255,255,255,.6);
+}
+
+#duration {
+  display: inline-block;
+  position: relative;
+  margin: -4px 6px 0 0;
+}
+
+#duration-label {
+  display: none;
+}
+
+.WebKit #duration-label {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 6px;
+  font-size: 11px;
+  color: #999;
+  text-shadow: 0 1px 0 rgba(255,255,255,.3);
+  pointer-events: none;
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.26,.08,.15,1),color .6s .2s ease-out;
+}
+
+.WebKit #duration-label.isRight {
+  right: 50%;
+  margin-right: -20px;
+  left: auto;
+  -webkit-transform: translate3d(20px,0,0);
+}
+
+.WebKit #duration-label.isLeft {
+  right: auto;
+  margin-left: -20px;
+  left: 50%;
+  -webkit-transform: translate3d(-20px,0,0);
+}
+
+.WebKit #duration:active #duration-label {
+  color: #4d4d4d;
+  -webkit-transition-delay: 0;
+}
+
+.WebKit #duration-input {
+  -webkit-appearance: none;
+  position: relative;
+  vertical-align: middle;
+  width: 100px;
+  border-radius: 20px;
+  background: #ccc;
+  box-shadow: 0 1px 0 rgba(255,255,255,.6);
+  overflow: hidden;
+  outline: 0;
+}
+
+.WebKit #duration-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  border: 5px solid #ccc;
+  background: #666;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+  -webkit-transition: border-width .2s cubic-bezier(.26,.08,.15,1);
+}
+
+.WebKit #duration-input:active::-webkit-slider-thumb {
+  border: 0 solid #ccc;
+  -webkit-transition-duration: .1;
+}
+
+.fixed-action-btn {
+  position: fixed;
+  right: 23px;
+  bottom: 45px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}
+
+.fixed-action-btn.toolbar {
+  padding: 0;
+  height: 74px;
 }
 
 #body-index {
