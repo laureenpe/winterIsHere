@@ -20276,5 +20276,5 @@ if (Vel) {
 
 
 $(document).ready(function () {
-	
+	$('.slider').slider();
 });

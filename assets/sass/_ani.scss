@@ -20,10 +20,10 @@
 	height:300px;
 }
 .slider .indicators{
-	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
 .slider{
-	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
 /*BOTONES INDEX*/
 .ani_boton_index{
@@ -84,10 +84,22 @@
 /* ------- PERFIL -------*/
 #body-screem10{
 	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+	width:100%;
 }
 .ani_perfil_contenImage{
-	width:60%;
-	margin-left:20%;
-	height:300px;
+	width:200px;
+	margin-left:10%;
+	height:200px;
 	border-radius:50%;
+	margin-top:50px;
+	border:2px solid $orange;
+}
+.ani_perfil_h6{
+	color:$orange;
+	text-align:center;
+	width:50%;
+}
+.ani_perfil_p{
+	text-align:center;
+	width:50%;
 }
