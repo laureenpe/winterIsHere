@@ -9337,16 +9337,549 @@ button.picker__today:focus {
   stroke-width: 4;
   stroke-linecap: round;
 }
+<<<<<<< HEAD
+=======
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
+>>>>>>> master
 * {
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+}
+
+.learning {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.learning h5 {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  padding-bottom: 27%;
+  color: #2d948d;
+  letter-spacing: 1px;
+}
+
+.learning i {
+  font-size: 42px;
+  color: #303841;
+}
+
+.learning a {
+  color: #000;
+}
+
+.start {
+  padding-top: 7%;
+}
+
+.start img {
+  width: 100%;
+}
+
+.card .card-image .card-title {
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+  font-size: 13px;
+}
+
+.card2 {
+  padding-top: 20px;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 42%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 23%;
+  padding-top: 20px;
+}
+
+.card.small {
+  height: 270px;
+}
+
+.login {
+  padding: 20px;
+}
+
+.login form {
+  padding-top: 50%;
+}
+
+a.waves-effect.waves-light.btn {
+  margin-top: 30px;
+  left: 26%;
+}
+
+.challenge {
+  background-image: url("../../../../assets/sass/..dist/img/medal-hanging-of-a-ribbon.svg");
+  padding-top: 20px;
+}
+
+.challenge img {
+  width: 50%;
+}
+
+.challenge span {
+  font-size: 12px;
+}
+
+.requirement h4 {
+  padding-bottom: 36px;
+  padding-top: 20px;
+}
+
+.container-form {
+  padding: 20px;
+}
+
+.container-form form {
+  padding-bottom: 30px;
+}
+
+.thanks-final h6 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+body {
+  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+}
+
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes hover {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(5%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes pull {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+
+  40% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  60% {
+    -webkit-transform: scaleY(.99);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  100% {
+    -webkit-transform: scaleY(.99);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+#airplane1,
+#airplane2 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 60s linear 0s infinite;
+}
+
+#countryObjects {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 240s linear 0s infinite;
+}
+
+#floatingGlobe {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-left 360s linear 0s infinite;
+}
+
+#globe {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 0s linear 0s infinite;
+}
+
+#windmill {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 331px 201px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 2s linear 0s infinite;
+}
+
+#cloud1 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 3s linear 1s infinite;
+}
+
+#cloud2 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 3s linear 2s infinite;
+}
+
+#cloud3 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 3s linear 3s infinite;
+}
+
+#circle1 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle2 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle3 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle4 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle5 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+>>>>>>> master
 * {
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+}
+
+.learning {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.learning h5 {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  padding-bottom: 27%;
+  color: #2d948d;
+  letter-spacing: 1px;
+}
+
+.learning i {
+  font-size: 42px;
+  color: #303841;
+}
+
+.learning a {
+  color: #000;
+}
+
+.start {
+  padding-top: 7%;
+}
+
+.start img {
+  width: 100%;
+}
+
+.card .card-image .card-title {
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+  font-size: 13px;
+}
+
+.card2 {
+  padding-top: 20px;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 42%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 23%;
+  padding-top: 20px;
+}
+
+.card.small {
+  height: 270px;
+}
+
+.login {
+  padding: 20px;
+}
+
+.login form {
+  padding-top: 50%;
+}
+
+a.waves-effect.waves-light.btn {
+  margin-top: 30px;
+  left: 26%;
+}
+
+.challenge {
+  background-image: url("../../../../assets/sass/..dist/img/medal-hanging-of-a-ribbon.svg");
+  padding-top: 20px;
+}
+
+.challenge img {
+  width: 50%;
+}
+
+.challenge span {
+  font-size: 12px;
+}
+
+.requirement h4 {
+  padding-bottom: 36px;
+  padding-top: 20px;
+}
+
+.container-form {
+  padding: 20px;
+}
+
+.container-form form {
+  padding-bottom: 30px;
+}
+
+.thanks-final h6 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+body {
+  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+}
+
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes hover {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(5%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes pull {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+
+  40% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  60% {
+    -webkit-transform: scaleY(.99);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  100% {
+    -webkit-transform: scaleY(.99);
+  }
+
+  80% {
+    -webkit-transform: scaleY(1.01);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+#airplane1,
+#airplane2 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 60s linear 0s infinite;
+}
+
+#countryObjects {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 240s linear 0s infinite;
+}
+
+#floatingGlobe {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-left 360s linear 0s infinite;
+}
+
+#globe {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 0s linear 0s infinite;
+}
+
+#windmill {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 331px 201px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 2s linear 0s infinite;
+}
+
+#cloud1 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 3s linear 1s infinite;
+}
+
+#cloud2 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 3s linear 2s infinite;
+}
+
+#cloud3 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: hover 3s linear 3s infinite;
+}
+
+#circle1 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle2 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle3 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle4 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle5 {
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-origin: 200px 200px;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+>>>>>>> master
 .nav {
   display: flex;
   justify-content: space-around;

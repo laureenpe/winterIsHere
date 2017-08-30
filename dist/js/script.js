@@ -20274,6 +20274,13 @@ if (Vel) {
   };
 })(jQuery);
 
+$(document).ready(function () {
+      $('#textarea1').val('New Text');
+          $('select').material_select();
+
+
+});
+
 
 $(document).ready(function () {
 	
