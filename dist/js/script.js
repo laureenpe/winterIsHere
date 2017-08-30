@@ -20274,16 +20274,231 @@ if (Vel) {
   };
 })(jQuery);
 
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60  * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
 $(document).ready(function () {
-      $('#textarea1').val('New Text');
-          $('select').material_select();
-
-
+    $('#textarea1').val('New Text');
+    $('select').material_select();
+    $('#sign-session').click(onLogin);
 });
 
+function validateForm() {
+    var valid = true;
+    if (!(/^([a-zñáéíóú]{2,13})+$/.test($("#username").val()))) {
+        $("#username").css("border", "1px solid red");
+        alert('El nombre debe ser válido');
+        valid = false;
+    }
+    if ($('#password').val() == '') {
+        $("#password").css("border", "1px solid red");
+        alert('Contraseña no debe estar vacío');
+        valid = false;
+    }
+
+    if (!(/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test($('#email').val()))) {
+        $("#email").css("border", "1px solid red");
+        alert('Error en el email');
+        valid = false;
+    }
+
+    return valid;
+}
+// If validations are true, then go to movies.html and save it into 
+function onLogin() {
+    if (validateForm()) { //If validate form is True
+        $("#sign-session").attr("href", "screen4.html");
+        saveToLocalStorage(); //guarda a local storage
+    }
+}
+var photo_url = ''; //save pictures
+$(document).ready(function () {
+   $("#btn-upload").click(handleFileSelect);//handleFileSelect, extract the files on input
+   $("#sign-session").click(saveToLocalStorage); //guarda a local storage
+   getFromLocalStorage(); //obtener local storage
+});
+//This function save to local storage
+function saveToLocalStorage() {
+   if (typeof (Storage) !== "undefined") {//soporte del navegador
+       if (photo_url != '') {//si la foto es diferente de vacìo
+           localStorage.setItem('photo', photo_url);
+       }
+        if ($('#username').val() != '') {//si el nombre es diferente de vacío
+            localStorage.setItem('username', $('#username').val());
+        }         
+   } else {
+       //No hay soporte de navegador
+       console.log('Sorry there is not support for local storage.')
+   }
+}
+function getFromLocalStorage() {
+   console.log('getting info for: ' + localStorage.getItem('#photo'));
+   $('#photo').attr('src', localStorage.getItem('photo'));
+    $('#username').attr('src', localStorage.getItem('username'));
+}
+//Function to save images in local storage
+function handleFileSelect() {
+   var files = $('#files')[0].files;
+   // Gets the image selected on input and assign them to image. Get from https://www.html5rocks.com/en/tutorials/file/dndfiles/
+   for (var i = 0, file; file = files[i]; i++) {
+       // Si la imagen coincide, proseguir
+       if (!file.type.match('image.*')) {
+           continue;
+       }
+        if ($('#firstname').val() != '') {//si el nombre es diferente de vacío
+            localStorage.setItem('firstname', $('#username').val());
+        }
+       var reader = new FileReader(); //object js to process the image
+       // when load image
+       reader.onload = (function (theFile) {
+           return function (e) {
+               // Render thumbnail.
+               $('#photo').attr('src', e.target.result);//assign the image to the function
+               photo_url = e.target.result;
+           };
+       })(file);
+       // lee la imagen como una URL
+       reader.readAsDataURL(file);
+   }
+}
+
+
 
 $(document).ready(function () {
+<<<<<<< HEAD
 	$(".var").click(function(){
 		window.location.assign("screen5a.html");
 	});
 });
+=======
+	$(".button-collapse").sideNav();
+	$(".var").click(function () {
+		window.location.assign("screen5a.html");
+	});
+
+});
+
+var timeline = new TimelineMax({ repeat: -1, repeatDelay: 3 });
+
+//if waiting --> invisible
+timeline.set(".HTML-Green-Lines", { visibility: "hidden" })
+
+timeline.set(".HTML-Purple-Lines", { visibility: "hidden" })
+
+timeline.set(".HTML-Yellow-Lines", { visibility: "hidden" })
+
+timeline.set(".CSS-Green-Lines", { visibility: "hidden" })
+
+timeline.set(".CSS-Purple-Lines", { visibility: "hidden" })
+
+timeline.set(".CSS-Yellow-Lines", { visibility: "hidden" })
+
+timeline.set(".JS-Green-Lines", { visibility: "hidden" })
+
+timeline.set(".JS-Purple-Lines", { visibility: "hidden" })
+
+timeline.set(".JS-Yellow-Lines", { visibility: "hidden" })
+
+timeline.set(".Canvas-Background", { fill: "#ffffff" })
+
+timeline.set(".Canvas-Left", { visibility: "hidden" })
+
+timeline.set(".Canvas-Right", { visibility: "hidden" })
+
+timeline.set(".Canvas-Middle", { visibility: "hidden" })
+
+timeline.set(".Cat", { visibility: "hidden" })
+
+//Start Animation
+
+//HTML Editor
+timeline.set(".HTML-Green-Lines", { visibility: "visible" })
+
+timeline.fromTo('.HTML-Green-Lines', 1, { scaleX: 0.0, transformOrigin: "left" }, { scale: 1, transformOrigin: "left" })
+
+timeline.set(".HTML-Purple-Lines", { visibility: "visible" })
+
+timeline.fromTo('.HTML-Purple-Lines', 1, { scaleX: 0.0, transformOrigin: "right" }, { scale: 1, transformOrigin: "right" })
+
+timeline.set(".HTML-Yellow-Lines", { visibility: "visible" })
+
+timeline.fromTo('.HTML-Yellow-Lines', 1, { scaleX: 0.0, transformOrigin: "left" }, { scale: 1, transformOrigin: "left" })
+
+//CSS Editor
+timeline.set(".CSS-Yellow-Lines", { visibility: "visible" })
+
+timeline.fromTo('.CSS-Yellow-Lines', 1, { scaleX: 0.0, transformOrigin: "left" }, { scale: 1, transformOrigin: "left" })
+
+timeline.set(".Canvas-Background", { fill: "#00ABFF" })
+
+timeline.set(".CSS-Purple-Lines", { visibility: "visible" })
+
+timeline.fromTo('.CSS-Purple-Lines', 1, { scaleX: 0.0, transformOrigin: "right" }, { scale: 1, transformOrigin: "right" })
+
+timeline.set(".CSS-Green-Lines", { visibility: "visible" })
+
+timeline.set(".Canvas-Left", { visibility: "visible" })
+
+timeline.set(".Canvas-Right", { visibility: "visible" })
+
+timeline.fromTo('.CSS-Green-Lines', 1, { scaleX: 0.0, transformOrigin: "left" }, { scale: 1, transformOrigin: "left" }, "+=0.5")
+
+timeline.set(".Canvas-Middle", { visibility: "visible" })
+
+//JS Editor
+timeline.set(".JS-Green-Lines", { visibility: "visible" })
+
+timeline.fromTo('.JS-Green-Lines', 1, { scaleX: 0.0, transformOrigin: "left" }, { scale: 1, transformOrigin: "left" })
+
+//Canvas Animations Begin
+timeline.fromTo('.Paint-Stripe', 1, { scaleY: 0.20, transformOrigin: "top" }, { scaleY: 1, transformOrigin: "top" })
+
+timeline.fromTo('.Paint-Roller-Left', 1, { y: -55, transformOrigin: "bottom" }, { y: 0, transformOrigin: "bottom" }, "-=1")
+
+//JS animation
+timeline.set(".JS-Purple-Lines", { visibility: "visible" })
+
+timeline.fromTo('.JS-Purple-Lines', 1, { scaleX: 0.0, transformOrigin: "right" }, { scale: 1, transformOrigin: "right" })
+
+//canvas animation
+timeline.fromTo('.Paint-Stripe2', 1, { scaleY: 0.20, transformOrigin: "top" }, { scaleY: 1, transformOrigin: "top" })
+
+timeline.fromTo('.Paint-Roller-Right', 1, { y: -55, transformOrigin: "bottom" }, { y: 0, transformOrigin: "bottom" }, "-=1")
+
+//JS Animation
+
+timeline.set(".JS-Yellow-Lines", { visibility: "visible" })
+
+timeline.fromTo('.JS-Yellow-Lines', 1, { scaleX: 0.0, transformOrigin: "left" }, { scale: 1, transformOrigin: "left" })
+
+timeline.set(".Cat", { visibility: "visible" })
+
+timeline.fromTo('.Cat', 1, { opacity: 0.0, transformOrigin: "center" }, { opacity: 1, transformOrigin: "center" })
+
+
+>>>>>>> master

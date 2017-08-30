@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var webserver = require('gulp-webserver');
+var urlAdjuster = require('gulp-css-url-adjuster');
 
 gulp.task('script', function(){
 	gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/materialize-css/dist/js/materialize.js','assets/js/*.js'])
@@ -14,6 +15,9 @@ gulp.task('style', function(){
 	gulp.src(['node_modules/materialize-css/dist/css/materialize.css','assets/sass/main.scss'])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(urlAdjuster({
+       replace:  ['../../../../assets/sass/dist/img/','../img/'],
+      }))
 	.pipe(concat('style.min.css'))
 	.pipe(gulp.dest('dist/css/'));
 });

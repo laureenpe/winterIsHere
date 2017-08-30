@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<!--fontawesome-->
 	<script src="https://use.fontawesome.com/fb4df1f3f2.js"></script>
 	<!-- Material Icon -->
@@ -15,7 +15,66 @@
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
-<body>
+<body class="white">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Flash|Code</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="screen10.html">Profile</a></li>
+				<li><a href="screen4.html">Jugar</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li>
+					<div class="user-view center-align">
+						<img class="circle responsive-img" src="dist/img/user_icon-icons.com_66546 (1).png">
+						<a href="#!name"><span class="black-text name">John Doe</span></a>
+						<a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
+					</div>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="screen10.html">Profile</a></li>
+				<li><a href="screen4.html">Jugar</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="ranking">
+		<div class="row">
+			<div class="col s12 m12 l12 center">
+			 <span>Nombre: Jhon Doe</span>	
+			</div>
+			<div class="imagen-profile center col s12">
+				<img id="photo" class="perf_ima">
+			</div>
+		</div>
+	</section>
+	<form action="#" class="btns-subir-foto">
+		<div class="btn  file">
+			<a id="btn-upload" class="darken-3">Subir Foto</a>
+		</div>
+		<input type="file" id="files" name="files[]" multiple />
+	</form>
+	</section>
+
+	<section class="data-info">
+		<div class="row">
+			<div class="col s12 m12 l12 center">
+				<span>RANKING</span><br>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star-half-o" aria-hidden="true"></i>
+			</div>
+			<div class="col s12 m12 l12 center">
+				<img src="dist/img/trophy.svg" alt="">
+			</div>
+		</div>
+
+	</section>
+
+
 
 
 
