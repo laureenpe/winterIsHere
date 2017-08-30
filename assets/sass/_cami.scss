@@ -2,40 +2,51 @@
 	margin-bottom: 0px;
 }
 
-.col{
-	.devicon-javascript-plain{
-		font-size: 170px;
-    	color: $blue;
-    	position: relative;
-    	right: 10px;
-    	top: 50px;
+
+.container-fluid{
+	.row{
+		.col{
+			.icon-js{
+				font-size: 146px;
+    			position: relative;
+    			right: 0px;
+    			top: 36px;
+			}
+		}
 	}
+}
+
+.collapsible{
+	img{
+		width: 50px;
+    	height: 45px;
+    	margin-right: 25px;
+	}
+}
+
+.welcome{
 	p{
 		font-size: 15px;
 		font-weight: bold;
+		z-index: 9999;
+		margin-top: 14px;
 	}
+}
+
+.stage{
 	h5{
 		color: $yellow;
 		font-family: $openSans;
 		font-weight: bold;
 	}
-	img{
-		color: $yellow;
-		width: 70px;
-		height: 40px;
-	}
-	.icon-list{
-		width: 20px;
-    	position: relative;
-    	top: 15px;
-    	right: 15px;
-	}
+}
+
+.syllabus{
 	.btn{
 		width: 135px;
-    	margin: 5px;
-    	position: relative;
     	font-size: 10px;
-    	right: 7px;
+    	left: 0% !important;
+    	margin-top: 10px !important;
 	}
 	.btn-lg{
 		height: 70px;
@@ -46,12 +57,42 @@
 	position: relative;
 }
 
-.nav-wrapper{
+.titulo-5a{
 	.brand-logo{
 		position: relative;
 		bottom: 55px;
 		left: 55px;
 		font-family: $openSans;
 		font-size: 20px;
+		color: black;
+	}
+}
+
+.background-square{
+	height: 250px;
+	width: 350px;
+	position: relative;
+	background-color: white;
+	z-index: -1;
+	margin-top: 25px;
+}
+
+.navbar{
+	background-color: transparent !important;
+	box-shadow: none;
+}
+
+.snippet{
+	height: 100px;
+	img{
+		width: 349px;
+    	position: relative;
+    	right: 10px;
+	}
+	input{
+		width: 40px !important;
+    	position: relative;
+    	bottom: 247px;
+    	left: 150px;
 	}
 }
