@@ -120,9 +120,14 @@ a.waves-effect.waves-light.btn {
 
 //Thanks Final
 .thanks-final {
+      padding-top: 47px;
   h6 {
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 20px;
+    color: $blue;
+  }
+  span{
+    color: $blue;
   }
 }
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
@@ -492,4 +497,14 @@ nav {
 }
 .ranking{
   padding-top: 30px;
+}
+
+.Codepen-Editor{
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }

@@ -9453,9 +9453,18 @@ a.waves-effect.waves-light.btn {
   padding-bottom: 30px;
 }
 
+.thanks-final {
+  padding-top: 47px;
+}
+
 .thanks-final h6 {
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 20px;
+  color: #31455a;
+}
+
+.thanks-final span {
+  color: #31455a;
 }
 
 @-webkit-keyframes rotate-right {
@@ -9791,6 +9800,16 @@ nav .nav-wrapper {
 
 .ranking {
   padding-top: 30px;
+}
+
+.Codepen-Editor {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.25);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.25);
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,.25);
 }
 
 * {
@@ -9905,9 +9924,18 @@ a.waves-effect.waves-light.btn {
   padding-bottom: 30px;
 }
 
+.thanks-final {
+  padding-top: 47px;
+}
+
 .thanks-final h6 {
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 20px;
+  color: #31455a;
+}
+
+.thanks-final span {
+  color: #31455a;
 }
 
 @-webkit-keyframes rotate-right {
@@ -10243,6 +10271,16 @@ nav .nav-wrapper {
 
 .ranking {
   padding-top: 30px;
+}
+
+.Codepen-Editor {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.25);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,.25);
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,.25);
 }
 
 #body-index {
@@ -10604,7 +10642,7 @@ footer {
 }
 
 .botones #btn-2 {
-  color: #fd3635;
+  color: #fff;
   border: 1px solid;
   border-top-color: currentcolor;
   border-right-color: currentcolor;
@@ -10614,7 +10652,6 @@ footer {
   position: relative;
   border-radius: 3px;
   background: 0 0;
-  border-color: #73baae;
 }
 
 .botones #btn-2:hover {
@@ -10704,7 +10741,6 @@ footer {
 
 .titulo {
   background-color: #fff;
-  margin-top: 40px;
 }
 
 .titulo .img-responsive {
@@ -10954,7 +10990,7 @@ footer {
   color: #fff;
   font-size: 23px;
   text-align: center;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .desafio p {
@@ -11002,4 +11038,13 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
+}
+
+.botones .btn-success {
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 5px;
+  background: #31455a;
 }
