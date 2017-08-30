@@ -45,3 +45,13 @@
 .arrow{
 	position: relative;
 }
+
+.nav-wrapper{
+	.brand-logo{
+		position: relative;
+		bottom: 55px;
+		left: 55px;
+		font-family: $openSans;
+		font-size: 20px;
+	}
+}
