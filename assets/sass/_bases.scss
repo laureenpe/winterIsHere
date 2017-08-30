@@ -296,9 +296,6 @@ body {
   position: relative;
   text-align: center;
 }
-
-
-
 /* -------------- Frame -------------- */
 
 .showRoll #frame {
@@ -337,69 +334,6 @@ body {
   0% { transform: translateX(0); } 
   100% { transform:  translateX(-500px); } 
 }
-/* Global ------------------------------------------------------ */
-a {
-  text-decoration: none;
-  color: hsl(210,100%,60%);
-}
-
-a:hover {
-  color: hsl(210,100%,70%);
-}
-
-a:active {
-  color: hsl(210,100%,50%);
-}
-
-p {
-  font-size: 11px;
-  line-height: 1.5;
-  color: hsl(0,0%,60%);
-}
-
-.hl {
-  color: hsl(0,0%,20%);
-}
-
-ul {
-  margin: 40px 0;
-  list-style: none;
-  text-align: center;
-  font-size: 14px;
-  color: hsl(0,0%,60%);
-}
-.WebKit ul {
-  text-align: left;
-}
-/* Show Sprite Checkbox ------------------------------------------------------ */
-
-.WebKit #show {
-  -webkit-appearance: none;
-  outline: none;
-  border-radius: 20px;
-  width: 20px;
-  height: 20px;
-  margin: -2px 6px 0 0;
-  vertical-align: middle;
-  border: 10px solid hsl(0,0%,80%);
-  background: hsl(0,0%,40%);
-  box-shadow: 0 1px 0 hsla(0,0%,100%,.6);
-  -webkit-transition: border-width .2s cubic-bezier(.26, .08, .15, 1);
-}
-
-.WebKit #show:checked:active,
-.WebKit #show:active {
-  border: 0px solid hsl(0,0%,80%);
-  -webkit-transition-duration: .1;
-}
-
-.WebKit #show:checked {
-  border: 5px solid hsl(0,0%,80%);
-  box-shadow: inset 0 1px 2px hsla(0,0%,0%,.4), 0 1px 0 hsla(0,0%,100%,.6);
-}
-
-
-
 
 
 /* Animation Duration ------------------------------------------------------ */
@@ -413,67 +347,10 @@ ul {
 
 /* Label */
 
-#duration-label {
-  display: none;
-}
-.WebKit #duration-label {
-  position: absolute;
-  display: block;
-  z-index: 1;
-  top: 6px;
-  font-size: 11px;
-  color: hsl(0,0%,60%);
-  text-shadow: 0 1px 0 hsla(0,0%,100%,.3);
-  pointer-events: none;
-  -webkit-transition: -webkit-transform .2s cubic-bezier(.26, .08, .15, 1), 
-    color .6s .2s ease-out;
-}
 
-.WebKit #duration-label.isRight {
-  right: 50%;
-  margin-right: -20px;
-  left: auto;
-  -webkit-transform: translate3d(20px,0,0);
-}
-.WebKit #duration-label.isLeft {
-  right: auto;
-  margin-left: -20px;
-  left: 50%;
-  -webkit-transform: translate3d(-20px,0,0);
-}
 
-.WebKit #duration:active #duration-label {
-  color: hsl(0,0%,30%);
-  -webkit-transition-delay: 0;
-}
-/* Input */
-.WebKit #duration-input {
-  -webkit-appearance: none;
-  position: relative;
-  vertical-align: middle;
-  width: 100px;
-  border-radius: 20px;
-  background: hsl(0,0%,80%);
-  box-shadow: 0 1px 0 hsla(0,0%,100%,.6);
-  overflow: hidden;
-  outline: none;
-}
 
-.WebKit #duration-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border-radius: 20px;
-  width: 20px;
-  height: 20px;
-  border: 5px solid hsl(0,0%,80%);
-  background: hsl(0,0%,40%);
-  box-shadow: inset 0 1px 2px hsla(0,0%,0%,.4);
-  -webkit-transition: border-width .2s cubic-bezier(.26, .08, .15, 1);
-}
 
-.WebKit #duration-input:active::-webkit-slider-thumb {
-  border: 0px solid hsl(0,0%,80%);
-  -webkit-transition-duration: .1;
-}
 //requirements
 .fixed-action-btn {
     position: fixed;
