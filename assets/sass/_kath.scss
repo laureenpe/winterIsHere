@@ -34,7 +34,9 @@
   padding: 80px 0;
   text-align: center;
   margin-top: -20%;
-
+button{
+  color: white !important;
+}
   h3 {
     color: white;
     font-size: 0.92rem;
@@ -136,7 +138,9 @@
 
 .botones {
   margin-top: -18%;
-  color: white;
+  a{
+    color: white;
+  }
 
   .btn-success {
     color: inherit;
@@ -151,7 +155,7 @@
   }
 
   #btn-2 {
-    color: white;
+    
     border: 1px solid;
     border-top-color: currentcolor;
     border-right-color: currentcolor;
@@ -161,6 +165,9 @@
     position: relative;
     border-radius: 3px;
     background: transparent;
+    a{
+      color: black;
+    }
   }
 
   #btn-2:hover {
@@ -563,4 +570,120 @@
   line-height: inherit;
   margin: 5px;
   background: $blue;
+}
+//SCREEN7
+.nivel{
+  background-color: #ecf0f1;
+  h1{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 25px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+    text-transform: none;
+    margin-top: 30;
+    text-align: center;
+    color: black;
+}
+}
+.desafio{
+    background-color: $darkblue;
+    padding-top:0%;
+h3{
+    color:white;
+    font-size:23px;
+    text-align:center;
+    padding:15px;
+}
+p{
+    color:white;
+    padding:5px 25px;
+    text-align:left;
+}
+    .form-control{
+        background-color:white;
+        text-align:center;
+        height:100vh;
+    }
+    button{
+        margin-top: -139%;
+        margin-bottom: -43px;
+        text-align: center;
+        margin-left: 37%;
+    }
+    h2{
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color:white;
+  text-align:center;
+}
+  h2 {
+    font-size: 3.56rem;
+    line-height: 110%;
+    margin: -14.22rem 0 1.424rem 0;
+}
+#timer{
+    @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
+text-align: center;
+margin-top: -55%;
+padding: 0px 5px 10px;
+body {
+  font-family: 'Titillium Web', cursive;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background: #222;
+  font-weight: 100;
+}
+div {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+span {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+#days {
+  font-size: 20px;
+  color: #db4844;
+}
+#hours {
+  font-size: 20px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 20px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 15px;
+  color: #abcd58;
+}
+}
+    
+    .form-group{
+        background-image: url('dist/img/da.png');
+        height:100vh;
+        width:100%;
+        background-repeat: no-repeat;
+    
+textarea{
+    color:white;
+    text-align:center;
+    padding:10px;
+    width:80%;
+    }
+    
+}
+}
+.botones{
+    #btn-1{
+        color:white;
+    }
 }
