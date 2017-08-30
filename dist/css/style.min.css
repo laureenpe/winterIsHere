@@ -9337,20 +9337,15 @@ button.picker__today:focus {
   stroke-width: 4;
   stroke-linecap: round;
 }
-<<<<<<< HEAD
-=======
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 
->>>>>>> master
 * {
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
-=======
 body {
   background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
@@ -9611,14 +9606,11 @@ body {
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 
->>>>>>> master
 * {
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
-=======
 body {
   background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
@@ -9879,7 +9871,6 @@ body {
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
 
->>>>>>> master
 .nav {
   display: flex;
   justify-content: space-around;
