@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<!--fontawesome-->
 	<script src="https://use.fontawesome.com/fb4df1f3f2.js"></script>
 	<!-- Material Icon -->
@@ -14,139 +14,197 @@
 
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
-
-<body>	
-	<div class="container-fluid">
-		<div class="row no-space">
-			<div class="col s6 m6 l6">
-				<p>¡Bienvenido a JavaScript! Aquí aprenderás sobre data types, funciones, loops y controles de flujo ¿te estamos hablando en chino? ¡No hay problema! Te aseguramos que irás aprendiendo en cada etapa cada uno de estos conceptos.</p>
-			</div>
-			<div class="col s6 m6 l6">
-				<i class="devicon-javascript-plain"></i>
-			</div>
+<body>
+		<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Flash|Code</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="sass.html">Home</a></li>
+				<li><a href="badges.html">Components</a></li>
+				<li><a href="collapsible.html">Javascript</a></li>
+				<li><a href="mobile.html">Mobile</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li>
+					<div class="user-view center-align">
+						<img class="circle responsive-img" src="dist/img/user_icon-icons.com_66546 (1).png">
+						<a href="#!name"><span class="black-text name">John Doe</span></a>
+						<a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
+					</div>
+				</li>
+				<li><a href="sass.html">Sass</a></li>
+				<li><a href="badges.html">Components</a></li>
+				<li><a href="collapsible.html">Javascript</a></li>
+				<li><a href="mobile.html">Mobile</a></li>
+			</ul>
 		</div>
+	</nav>
+	<div class="container-fluid content">
 		<div class="row">
-			<div class="col s12 m12 l12">
-				<p>Al finalizar este curso, serás capaz de construir proyectos con JavaScript que permitarán que tu HTML y tu CSS dejen su estado estático y cobren vida.</p>
+			<div class="col s12 m12 l12 center">
+				<i class="devicon-javascript-plain icon-js"></i>
+			</div>
+			<div class="col s12 m12 l12 center">
+				<p>¡Bienvenido a JavaScript! <br> Aquí aprenderás sobre tipos de datos, funciones, loops y controles de flujo</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col s12 m12 l12 center">
+			<div class="col s12 m12 l12 center stage">
 				<h5>Etapas</h5>
 				<div class="divider"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s12 m12 l12">
+			<div class="col s12 m12 l12 syllabus">
 				<ul class="collapsible" data-collapsible="accordion">
-    				<li>
-      					<div class="collapsible-header"><img src="dist/img/start.svg" alt="">Principiante</div>
-      					<div class="collapsible-body">
-      						<ul>
-      							<div class="row">
-      								<div class="col l6 m6 s6 center">
-      									<a class="waves-effect waves-light btn"><li>Introducción</li></a>
-      									<a class="waves-effect waves-light btn"><li>¿Qué es programar?</li></a>
-      									<a class="waves-effect waves-light btn"><li>Punto y Coma</li></a>
-      									<a class="waves-effect waves-light btn"><li>Palabras claves</li></a>
-      									<a class="waves-effect waves-light btn"><li>Comentarios</li></a>
-      									<a class="waves-effect waves-light btn"><li>Strings</li></a>
-      								</div>
-      								<div class="col l6 m6 s6 center">
-      									<a href="screen5a.html" class="waves-effect waves-light btn"><li>Variables</li></a>
-      									<a class="waves-effect waves-light btn"><li>Números</li></a>
-      									<a class="waves-effect waves-light btn"><li>Aritmética</li></a>
-      									<a class="waves-effect waves-light btn"><li>Módulo</li></a>
-      									<a class="waves-effect waves-light btn"><li>Booleans</li></a>
-      									<a class="waves-effect waves-light btn"><li>Comparaciones</li></a>
-      								</div>
-      							</div>
-      							<h6 class="center">Variables ¿se come?</h6>
-      							<div class="divider"></div>
-								<div class="row">	
+					<li>
+						<div class="collapsible-header"><img src="dist/img/start.svg" alt="">Principiante</div>
+						<div class="collapsible-body">
+							<ul>
+								<div class="row">
+									<div class="col l6 m6 s6 center">
+										<a class="waves-effect waves-light btn">
+											<li>Introducción</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>¿Qué es programar?</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Punto y Coma</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Palabras claves</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Comentarios</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Strings</li>
+										</a>
+									</div>
+									<div class="col l6 m6 s6 center">
+										<a href="screen5a.html" class="waves-effect waves-light btn">
+											<li>Variables</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Números</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Aritmética</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Módulo</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Booleans</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Comparaciones</li>
+										</a>
+									</div>
+								</div>
+								<h6 class="center">Variables ¿se come?</h6>
+								<div class="divider"></div>
+								<div class="row">
 									<div class="col l6 m6 s6">
-      									<a class="waves-effect waves-light btn"><li>Declaraciones</li></a>
-      									<a class="waves-effect waves-light btn btn-lg"><li>Nombrar una variable</li></a>
-      									<a class="waves-effect waves-light btn btn-lg"><li>Asignar una variable</li></a>
-      									<a class="waves-effect waves-light btn btn-lg"><li>Reasignando una variable</li></a>
-      								</div>
-      								<div class="col l6 m6 s6">
-      									<a class="waves-effect waves-light btn"><li>Tipos</li></a>
-      									<a class="waves-effect waves-light btn btn-lg"><li>Variables indefinidas</li></a>
-      									<a class="waves-effect waves-light btn btn-lg"><li>Tipos de comparaciones</li></a>
-      									<a class="waves-effect waves-light btn"><li>Inicialización</li></a>
-      								</div>
-      							</div>
-      						</ul>
-      					</div>
-    				</li>
-    				<li>
-      					<div class="collapsible-header"><img src="dist/img/coding.svg" alt="">Intermedio</div>
-      					<div class="collapsible-body">
-      						<ul>
-      							<h6>Funciones</h6>
-      							<div class="divider"></div>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Console.log()</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Declarando funciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Guardado funciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Parámetros</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Llamando funciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Argumentos</li>
-      							<h6>Condiciones</h6>
-      							<div class="divider"></div>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Condiciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">If Statements</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Else Statements</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Else If Statements</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">And Operator</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Or Operator</li>
-      							<h6>Loops</h6>
-      							<div class="divider"></div>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">For Loops</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Counter</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Loop Condition</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Incrementing</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Incrementing II</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Code Blocks</li>
-      							<h6>Arreglos</h6>
-      							<div class="divider"></div>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Arrays</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Declarando arreglos</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Almacenando data</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Indices</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Length</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Arrays & Loops</li>
-      							<h6>Objetos</h6>
-      							<div class="divider"></div>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Console.log()</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Declarando funciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Guardado funciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Parámetros</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Llamando funciones</li>
-      							<li><img class="icon-list" src="dist/img/gear.svg" alt="">Argumentos</li>
-      						</ul>
-      					</div>
-    				</li>
-    				<li>
-      					<div class="collapsible-header"><img src="dist/img/unicorn.svg" alt="">Avanzado</div>
-      					<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    				</li>
-  				</ul>
+										<a class="waves-effect waves-light btn">
+											<li>Declaraciones</li>
+										</a>
+										<a class="waves-effect waves-light btn btn-lg">
+											<li>Nombrar una variable</li>
+										</a>
+										<a class="waves-effect waves-light btn btn-lg">
+											<li>Asignar una variable</li>
+										</a>
+										<a class="waves-effect waves-light btn btn-lg">
+											<li>Reasignando una variable</li>
+										</a>
+									</div>
+									<div class="col l6 m6 s6">
+										<a class="waves-effect waves-light btn">
+											<li>Tipos</li>
+										</a>
+										<a class="waves-effect waves-light btn btn-lg">
+											<li>Variables indefinidas</li>
+										</a>
+										<a class="waves-effect waves-light btn btn-lg">
+											<li>Tipos de comparaciones</li>
+										</a>
+										<a class="waves-effect waves-light btn">
+											<li>Inicialización</li>
+										</a>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><img src="dist/img/coding.svg" alt="">Intermedio</div>
+						<div class="collapsible-body">
+							<ul>
+								<h6>Funciones</h6>
+								<div class="divider"></div>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Console.log()</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Declarando funciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Guardado funciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Parámetros</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Llamando funciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Argumentos</li>
+								<h6>Condiciones</h6>
+								<div class="divider"></div>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Condiciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">If Statements</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Else Statements</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Else If Statements</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">And Operator</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Or Operator</li>
+								<h6>Loops</h6>
+								<div class="divider"></div>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">For Loops</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Counter</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Loop Condition</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Incrementing</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Incrementing II</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Code Blocks</li>
+								<h6>Arreglos</h6>
+								<div class="divider"></div>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Arrays</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Declarando arreglos</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Almacenando data</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Indices</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Length</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Arrays & Loops</li>
+								<h6>Objetos</h6>
+								<div class="divider"></div>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Introducción</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Console.log()</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Declarando funciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Guardado funciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Parámetros</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Llamando funciones</li>
+								<li><img class="icon-list" src="dist/img/gear.svg" alt="">Argumentos</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><img src="dist/img/unicorn.svg" alt="">Avanzado</div>
+						<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-
-		
-
-
+	<footer>
+		¿Te estamos hablando en chino? <br> ¡No hay problema! Te aseguramos que irás aprendiendo en cada etapa cada uno de estos conceptos.
+	</footer>
 	<script src="dist/js/script.js"></script>
 </body>
 
