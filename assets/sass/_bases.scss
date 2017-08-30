@@ -4,18 +4,21 @@
 }
 
 body {
-  background: -webkit-radial-gradient(center, ellipse cover, #fff 0, #f2efd9 100%);
+ // background: -webkit-radial-gradient(center, ellipse cover, #fff 0, #f2efd9 100%);
+// background-color: $green-background;
+ font-family: 'Roboto', sans-serif;
+
 }
 
 .learning {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 
   h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     padding-bottom: 27%;
-    color: rgb(45, 148, 141);
+    color: $blue;
     letter-spacing: 1px;
   }
 
@@ -26,6 +29,9 @@ body {
 
   a {
     color: black;
+  }
+  p:hover{
+    color: $green-background;
   }
 }
 //BEGGINER SCREEN
@@ -115,8 +121,8 @@ a.waves-effect.waves-light.btn {
 //Thanks Final
 .thanks-final {
   h6 {
-	text-transform: uppercase;
-	font-size: 35px;
+    text-transform: uppercase;
+    font-size: 35px;
   }
 }
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
@@ -295,7 +301,7 @@ a.waves-effect.waves-light.btn {
 /* -------------- Frame -------------- */
 
 .showRoll #frame {
-  border-color: hsl(0,0%,70%);
+  border-color: hsl(0, 0%, 70%);
 }
 
 #frame {
@@ -303,10 +309,18 @@ a.waves-effect.waves-light.btn {
   height: 72px;
   border: 1px solid transparent;
   background: url(https://s.cdpn.io/79/sprite-steps.png) no-repeat left top;
-  animation: frame-animation 1s steps(10) infinite;    
+  animation: frame-animation 1s steps(10) infinite;
 }
 
-@keyframes frame-animation { 0% { background-position: 0px 0; } 100% { background-position: -500px 0; } }
+@keyframes frame-animation {
+  0% {
+    background-position: 0px 0;
+  }
+
+  100% {
+    background-position: -500px 0;
+  }
+}
 /* -------------- Roll -------------- */
 .showRoll #roll {
   opacity: .2;
@@ -320,15 +334,20 @@ a.waves-effect.waves-light.btn {
   left: 0;
   width: 500px;
   //height: 72px;
-  border: 1px solid hsl(0,0%,70%);
-  background: hsl(0,0%,100%) url(https://s.cdpn.io/79/sprite-steps.png) no-repeat left top;
+  border: 1px solid hsl(0, 0%, 70%);
+  background: hsl(0, 0%, 100%) url(https://s.cdpn.io/79/sprite-steps.png) no-repeat left top;
   transition: opacity .3s linear;
-  animation:  roll-animation 1s steps(10) infinite;
+  animation: roll-animation 1s steps(10) infinite;
 }
 
-@keyframes roll-animation { 
-  0% { transform: translateX(0); } 
-  100% { transform:  translateX(-500px); } 
+@keyframes roll-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-500px);
+  }
 }
 
 
@@ -343,99 +362,134 @@ a.waves-effect.waves-light.btn {
 /* Label */
 //requirements
 .fixed-action-btn {
-    position: fixed;
-    right: 23px;
-    bottom: 45px;
-    padding-top: 15px;
-    margin-bottom: 0;
-    z-index: 997;
-}
-  .fixed-action-btn.toolbar {
-    padding: 0;
-     height: 74px;
-}
-    //profile
-    .text{
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 7%;
-    margin-top: 0%;
-}
-  .title-nav-perfil{
-		font-family: 'Teko', sans-serif;
-		font-size: 20px;
-		font-weight: 900;
-		margin-left: 30%;
-	}
-	.buttom-enlaces-nav{
-		margin-left: 33%;
-		.icon-enlaces-nav{
-			font-size: x-large;
-		}
-	}
-
-.errores{
-    background: red;
-    color: white;
-    display: none;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-left: 50px;
-    padding: 5px;
-    position: absolute;
+  position: fixed;
+  right: 23px;
+  bottom: 45px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
 }
 
-.btns-subir-foto{
-	.file{
-		position:relative;
-		left: 32%;	
-		#btn-upload{
-			color: #FFF;
-		}		
-	}
-	#files{
-		position: relative;
-    	left: 10%;
-	}
+.fixed-action-btn.toolbar {
+  padding: 0;
+  height: 74px;
+}
+//profile
+.text {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 7%;
+  margin-top: 0%;
 }
 
-.box2{	
-	.file{
-		a{
-			color: #FFF;
-		}
-	}		
+.title-nav-perfil {
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 30%;
 }
 
+.buttom-enlaces-nav {
+  margin-left: 33%;
 
-#perfil-section{
-	margin: 10px 0;
-	height: 30vh;
-	.box-a{
-		border-radius: 4px;
-		padding: 9px;
-		font-size: 12px;
-		margin-top: 3%;
-	}
-	.box-b{
-		border-radius: 4px;
-		padding: 9px;
-		font-size: 12px;
-		margin-top: 3%;
-	}
-	.title-favorites{
-		margin-top: 8vh;
-		letter-spacing: 2px;
-	}
+  .icon-enlaces-nav {
+    font-size: x-large;
+  }
 }
 
-#los-favoritos{
-	padding:10px 0;
-	.caja{
-		padding: 1px 5px;
-		color:#FFF;
-		font-size: 10px;
-		margin-bottom: 10px;
-	}
+.errores {
+  background: red;
+  color: white;
+  display: none;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 5px;
+  position: absolute;
+}
+
+.btns-subir-foto {
+  .file {
+    position: relative;
+    left: 32%;
+
+    #btn-upload {
+      color: #fff;
+    }
+  }
+
+  #files {
+    position: relative;
+    left: 10%;
+  }
+}
+
+.box2 {
+  .file {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+#perfil-section {
+  margin: 10px 0;
+  height: 30vh;
+
+  .box-a {
+    border-radius: 4px;
+    padding: 9px;
+    font-size: 12px;
+    margin-top: 3%;
+  }
+
+  .box-b {
+    border-radius: 4px;
+    padding: 9px;
+    font-size: 12px;
+    margin-top: 3%;
+  }
+
+  .title-favorites {
+    margin-top: 8vh;
+    letter-spacing: 2px;
+  }
+}
+
+#los-favoritos {
+  padding: 10px 0;
+
+  .caja {
+    padding: 1px 5px;
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+//General
+nav {
+  .nav-wrapper {
+    background-color: $blue;
+  }
+}
+
+//Screen10
+.data-info{
+  padding-top: 30px;
+  padding-left: 30px;
+  i{
+    color: #FFED78;
+
+  }
+  img{
+        width: 20%;
+  }
+      span{
+        padding-top: 30px;
+      }
+}
+.ranking{
+  padding-top: 30px;
 }

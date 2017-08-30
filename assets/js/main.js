@@ -9,7 +9,10 @@ function saveToLocalStorage() {
    if (typeof (Storage) !== "undefined") {//soporte del navegador
        if (photo_url != '') {//si la foto es diferente de vacìo
            localStorage.setItem('photo', photo_url);
-       }         
+       }
+        if ($('#username').val() != '') {//si el nombre es diferente de vacío
+            localStorage.setItem('username', $('#username').val());
+        }         
    } else {
        //No hay soporte de navegador
        console.log('Sorry there is not support for local storage.')
@@ -18,6 +21,7 @@ function saveToLocalStorage() {
 function getFromLocalStorage() {
    console.log('getting info for: ' + localStorage.getItem('#photo'));
    $('#photo').attr('src', localStorage.getItem('photo'));
+    $('#username').attr('src', localStorage.getItem('username'));
 }
 //Function to save images in local storage
 function handleFileSelect() {
@@ -28,6 +32,9 @@ function handleFileSelect() {
        if (!file.type.match('image.*')) {
            continue;
        }
+        if ($('#firstname').val() != '') {//si el nombre es diferente de vacío
+            localStorage.setItem('firstname', $('#username').val());
+        }
        var reader = new FileReader(); //object js to process the image
        // when load image
        reader.onload = (function (theFile) {

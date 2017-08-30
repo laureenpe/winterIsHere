@@ -27,7 +27,7 @@
 }
 /*BOTONES INDEX*/
 .ani_boton_index{
-	background-color:#FF5338;
+	background-color:$blue;
 	color: white;
 	padding: 10px;
 	width:80%;
@@ -40,10 +40,11 @@
 } 
 .ani_boton_index_dos{
 	margin-top:10px;
+	color: white;
 }
 .ani_boton_a{
 	margin-left:10%;
-	color:#e64329;
+	color:white;
 	padding-top:10px;
 	font-size:15px;
 }
@@ -58,37 +59,42 @@
 .ani_registro_h2{
 	text-align:center;
 	margin-top:50px;
+	color: $blue;
 }
 .ani_input{
 	margin-left:10%;
 	width:80%;
-	border:1px solid #32dbc9;//no esta funcionando esto!
+	padding-bottom: 30px;
 }
 .ani_registro_label{
-	color: black;
+	color: $blue;
 	font-size:15px;
 }
 .ani_registro_boton{
-	margin-left:10%;
 	width:80%;
 	background-color:white;
 	padding:10px;
 	border-style:none;
 	border:1px solid #32dbc9;
 	border-radius:5px;
-	font-size:20px;
+	font-size:12px;
+	color: $blue;
 }
 .ani_registro_div{
 	margin-top:50px;
 }
 
 /* ------- PERFIL -------*/
-#body-screem10{
-	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
-}
+
 .ani_perfil_contenImage{
 	width:60%;
 	margin-left:20%;
 	height:300px;
 	border-radius:50%;
+}
+
+input[type=text]:not(.browser-default):focus:not[read-only]{
+	border-bottom: none !important;
+	box-shadow: none;
+
 }

@@ -9347,19 +9347,19 @@ button.picker__today:focus {
 }
 
 body {
-  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+  font-family: Roboto,sans-serif;
 }
 
 .learning {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .learning h5 {
   font-family: 'Open Sans',sans-serif;
   font-weight: 700;
   padding-bottom: 27%;
-  color: #2d948d;
+  color: #31455a;
   letter-spacing: 1px;
 }
 
@@ -9370,6 +9370,10 @@ body {
 
 .learning a {
   color: #000;
+}
+
+.learning p:hover {
+  color: #2ab582;
 }
 
 .start {
@@ -9762,6 +9766,31 @@ a.waves-effect.waves-light.btn {
   color: #fff;
   font-size: 10px;
   margin-bottom: 10px;
+}
+
+nav .nav-wrapper {
+  background-color: #31455a;
+}
+
+.data-info {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.data-info i {
+  color: #ffed78;
+}
+
+.data-info img {
+  width: 20%;
+}
+
+.data-info span {
+  padding-top: 30px;
+}
+
+.ranking {
+  padding-top: 30px;
 }
 
 * {
@@ -9770,19 +9799,19 @@ a.waves-effect.waves-light.btn {
 }
 
 body {
-  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+  font-family: Roboto,sans-serif;
 }
 
 .learning {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .learning h5 {
   font-family: 'Open Sans',sans-serif;
   font-weight: 700;
   padding-bottom: 27%;
-  color: #2d948d;
+  color: #31455a;
   letter-spacing: 1px;
 }
 
@@ -9793,6 +9822,10 @@ body {
 
 .learning a {
   color: #000;
+}
+
+.learning p:hover {
+  color: #2ab582;
 }
 
 .start {
@@ -10185,6 +10218,31 @@ a.waves-effect.waves-light.btn {
   color: #fff;
   font-size: 10px;
   margin-bottom: 10px;
+}
+
+nav .nav-wrapper {
+  background-color: #31455a;
+}
+
+.data-info {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.data-info i {
+  color: #ffed78;
+}
+
+.data-info img {
+  width: 20%;
+}
+
+.data-info span {
+  padding-top: 30px;
+}
+
+.ranking {
+  padding-top: 30px;
 }
 
 #body-index {
@@ -10221,7 +10279,7 @@ a.waves-effect.waves-light.btn {
 }
 
 .ani_boton_index {
-  background-color: #ff5338;
+  background-color: #31455a;
   color: #fff;
   padding: 10px;
   width: 80%;
@@ -10235,11 +10293,12 @@ a.waves-effect.waves-light.btn {
 
 .ani_boton_index_dos {
   margin-top: 10px;
+  color: #fff;
 }
 
 .ani_boton_a {
   margin-left: 10%;
-  color: #e64329;
+  color: #fff;
   padding-top: 10px;
   font-size: 15px;
 }
@@ -10256,36 +10315,33 @@ a.waves-effect.waves-light.btn {
 .ani_registro_h2 {
   text-align: center;
   margin-top: 50px;
+  color: #31455a;
 }
 
 .ani_input {
   margin-left: 10%;
   width: 80%;
-  border: 1px solid #32dbc9;
+  padding-bottom: 30px;
 }
 
 .ani_registro_label {
-  color: #000;
+  color: #31455a;
   font-size: 15px;
 }
 
 .ani_registro_boton {
-  margin-left: 10%;
   width: 80%;
   background-color: #fff;
   padding: 10px;
   border-style: none;
   border: 1px solid #32dbc9;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 12px;
+  color: #31455a;
 }
 
 .ani_registro_div {
   margin-top: 50px;
-}
-
-#body-screem10 {
-  background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
 
 .ani_perfil_contenImage {
@@ -10293,6 +10349,11 @@ a.waves-effect.waves-light.btn {
   margin-left: 20%;
   height: 300px;
   border-radius: 50%;
+}
+
+input[type=text]:not(.browser-default):focus:not[read-only] {
+  border-bottom: none!important;
+  box-shadow: none;
 }
 
 .no-space {
