@@ -1,5 +1,5 @@
 #body-index{
-	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
 .row .col{
 	padding:0;
@@ -21,13 +21,14 @@
 }
 .slider .indicators{
 	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
-}
+}	
+
 .slider{
 	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
 /*BOTONES INDEX*/
 .ani_boton_index{
-	background-color:$orange;
+	background-color:orange;
 	color: white;
 	padding: 10px;
 	width:80%;
@@ -52,7 +53,7 @@
 }
 /* ------ SIGN UP ------ */
 #body-screen2{
-	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 }
 .ani_registro_h2{
 	text-align:center;
@@ -83,7 +84,7 @@
 
 /* ------- PERFIL -------*/
 #body-screem10{
-	background:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
+	background-color:-webkit-radial-gradient(center,ellipse cover,#fff 0,#f2efd9 100%);
 	width:100%;
 }
 .ani_perfil_contenImage{
@@ -92,10 +93,10 @@
 	height:200px;
 	border-radius:50%;
 	margin-top:50px;
-	border:2px solid $orange;
+	border:2px solid orange;
 }
 .ani_perfil_h6{
-	color:$orange;
+	color:orange;
 	text-align:center;
 	width:50%;
 }
