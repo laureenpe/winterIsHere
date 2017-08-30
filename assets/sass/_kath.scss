@@ -1,0 +1,175 @@
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #FF8000;
+	li{	
+		h5{
+			font-size: 3em;
+			font-weight: bolder;
+		}
+		a{
+			i{
+				font-size: 3em;
+				font-weight: bolder;
+			}
+		}
+	}
+	img.responsive-img{
+    height: auto;
+    margin-left: 40%;
+}
+}
+
+
+
+
+.puntaje{
+	background-image: url('dist/img/nathan-anderson-146006.jpg');
+	max-width:100%;
+	height:47vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 80px;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: -20%;
+  
+  h3{
+    color:white;
+    font-size: 0.92rem;
+
+  }
+  h4{
+    position: relative;
+    bottom: 117px;
+    color: white;
+    font-size: 1.5em;
+margin-left: 8%;
+
+  }
+  .titulos{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    text-transform: capitalize;
+  }
+
+.devicon{
+	margin-left:29%;
+}
+
+.devicon-html5-plain{
+	font-size:4em;
+	color:#2965F1;
+}
+.devicon-css3-plain{
+	font-size:4em;
+	color:orange;
+}
+.devicon-javascript-plain{
+	font-size:4em;
+	color:#FBDE34;
+}
+
+.devicon-jquery-plain{
+	font-size:4em;
+	color:#0868AB;
+
+}
+}
+.titulo{
+
+margin-top: 40px;
+
+  .img-responsive{
+
+   text-align:center;
+   margin-left: 0;
+   margin-bottom:-28px;
+  
+ }
+ 
+ h1{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+  margin-top:30;
+  text-align:center;
+  color:#44558F;
+}
+span{
+	font-size:51%;
+	color: black;
+	font-weight: 500;
+}
+ p{
+  margin-bottom: 1rem;
+  font-size: inherit;
+  line-height: 1.6;
+  
+}
+}
+
+.punt-box {
+  max-width: 400px;
+  margin: 50px auto 0;
+  padding-right: .9375rem;
+  padding-left: .9375rem;
+
+  
+ 
+@media (min-width: 992px) {
+  .service-box {
+    margin: 20px auto 0;
+  }
+}
+.service-box p {
+  color: #747474;
+  font-size: 10px;
+}
+   
+}
+
+
+
+
+.botones{
+	margin-top:-18%;
+	color:white;
+	.btn-success {
+    color: inherit;
+    font: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    margin: 5px;
+}
+
+
+ #btn-1:hover {
+    background: #fd3635;
+  }
+  #btn-2{
+color:#fd3635;;
+    border: 1px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+    background:transparent;
+    border-color: #73baae;
+
+  }
+  #btn-2:hover {
+  	background-color:transparent;
+    border-color: #ff075a;
+  }
+}
